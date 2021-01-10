@@ -1,0 +1,21 @@
+import { type } from 'os';
+import ProductsCard from './ProductCard';
+import './styles.css'; 
+import { Product } from './Types';
+
+type Props ={
+    products: Product[];
+}
+function ProductsList({products}: Props){
+    return(
+        <div className="orders-list-container">
+            <div className="orders-list-items">
+                {products.map(product => (
+                <ProductsCard key={product.id} product={product}/>
+                ))}
+            </div>
+        </div>
+    )
+}
+
+export default ProductsList;
