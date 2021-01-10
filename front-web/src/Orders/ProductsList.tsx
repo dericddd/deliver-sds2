@@ -1,4 +1,3 @@
-import { type } from 'os';
 import { checkIsSelected } from './helpers';
 import ProductsCard from './ProductCard';
 import './styles.css'; 
