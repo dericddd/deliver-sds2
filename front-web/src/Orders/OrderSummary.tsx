@@ -1,6 +1,4 @@
-import { type } from "os";
 import { formatPrice } from "./helpers";
-import { OrderLocationData } from "./Types";
 
 type Props ={amount:number;totalPrice:number;onSubmit:()=>void;}
 
