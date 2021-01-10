@@ -8,8 +8,8 @@ function ProductsCard({product,isSelected,onSelectProduct}:Props){
         <div className={`order-card-container ${isSelected?'selected':''}`} onClick={()=>onSelectProduct(product)}>
             <h3 className="order-card-title">
                 {product.name}
-            </h3>
-            <img src={product.imageUri} className="order-card-image"/>
+            </h3 >
+            <img src={product.imageUri} className="order-card-image" alt={product.name}/>
             <h3 className="order-card-price">
                 {formatPrice(product.price)}
             </h3>
